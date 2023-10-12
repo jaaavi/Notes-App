@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Note App</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <div class="menu-btn">
+      <div class="menu-icon">
+        <i class="uil uil-bars"></i>
+      </div>
+      <div class="menu-text">Estadísticas</div>
+    </div>
+    
+    <div class="sidebar">
+      <div class="close-btn">
+        <i class="uil uil-times"></i>
+      </div>
+
+      <canvas id="myChart" width="400" height="400" style="margin-top: 1.5em;"></canvas>
+      <canvas id="myPieChart" width="400" height="400"></canvas>
+    </div>
+    
+    <div class="popup-box">
+      <div class="popup">
+        <div class="content">
+          <header>
+            <p></p>
+            <i class="uil uil-times"></i>
+          </header>
+          <form action="#">
+            <div class="row title">
+              <label>Título</label>
+              <input type="text" spellcheck="false">
+            </div>
+            <div class="row title">
+              <label>Categoría</label>
+              <input class="categoryInput" type="text" spellcheck="false">
+            </div>
+            <div class="row color">
+              <label>Color</label>
+              <input class="colorInput" type="color">
+            </div>
+            <div class="row description">
+              <label>Descripción</label>
+              <textarea spellcheck="false"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      <li class="add-box">
+        <div class="icon"><i class="uil uil-plus"></i></div>
+        <p>Añadir</p>
+      </li>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script src="/public/js/script.js"></script>
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const sidebar = document.querySelector('.sidebar');
+      const closeBtn = document.querySelector('.close-btn');
+    
+      menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+      });
+    
+      closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('show');
+      });
+    </script>
+    
+  </body>
+</html>
