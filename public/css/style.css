@@ -9,7 +9,7 @@ body{
   overflow-x: hidden !important;
   height: 100vh;
   width: 100vw;
-  background-image: url(public/img/lineas.jpg);
+  background-image: url(../img/lineas.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -54,7 +54,7 @@ body{
   font-size: 40px;
   border-radius: 50%;
   justify-content: center;
-  border: 2px dashed #88ABFF;
+  border: 2px solid #88ABFF;
 }
 .add-box p{
   color: #88ABFF;
