@@ -318,3 +318,19 @@ form button{
     color: #fff;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    .menu-btn {
+      top: 10px;
+      right: 10px;
+    }
+
+    .sidebar {
+      width: 100%;
+    }
+
+    .close-btn {
+      top: 10px;
+      right: 10px;
+    }
+  }
